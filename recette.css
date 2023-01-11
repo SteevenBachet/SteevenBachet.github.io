@@ -19,9 +19,8 @@ p.categorie {
 }
 div.contenu {
     background-color: white;
-    padding: 0px 40px 40px 40px;
-    margin: 60px 5% 50px 5%;
-    min-width: 450px;
+    padding: 0px 8px 20px 8px;
+    margin: 40px 8px 40px 8px;
     box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
     overflow: visible;
 }
@@ -68,27 +67,23 @@ table.info {
     width: 100%; 
     color: white;
     background-color: #5f3b2ec0;   
-    padding: 2px;
+  
     
 }
 table.info td {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
 }
 table.info th {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: bottom;
 }
 div.colonne {
-    width: 45% 
+    width: 100%
 }
 div.colonne1 {
     display: inline-block;
-    margin-right: 10%;
-}
-div.colonne2 {
-    float: right;
 }
 
 div.colonne h2 {
@@ -129,4 +124,39 @@ table.preparation tr {
     height: 56px;
 }
 
+/* Style pour ordinateur */
+
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        padding: 0px 40px 40px 40px;
+        margin: 60px 5% 50px 5%;
+        min-width: 450px;
+    }
+    table.info {
+        padding: 2px;
+    }
+    table.info td {
+        font-size: 12px;
+    }
+    table.info th {
+        font-size: 14px;
+    }
+    div.colonne {
+        width: 45% 
+    }
+    div.colonne1 {
+        margin-right: 10%;
+    }
+    div.colonne2 {
+        float: right;
+    }
+}
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        padding: 0px 40px 40px 40px;
+        margin: 60px auto 50px auto;
+        width: 713px;
+    }
+   
+}
 
