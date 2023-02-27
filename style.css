@@ -557,9 +557,10 @@ nav .line {
      .blue-banderole-right a {
        position: absolute;
         left: 50%;
-        top: 120%;
+        top: 130%;
         transform: translate(-50%, 0);
-        width: 200px;
+        width: 155px;
+        font-size: 20px;
         
      }
      .green-titre h2{
