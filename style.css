@@ -1232,7 +1232,7 @@ nav .line {
         text-align: center;
     }
 
-}@media screen and (max-width: 1200px) {
+}@media screen and (max-width: 720px) {
     .creativity-container {
         width: 100%;
     }
