@@ -8,6 +8,7 @@ body {
     background: #f4f4f4;
     letter-spacing: 1px;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 
