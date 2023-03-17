@@ -327,12 +327,15 @@ header {
     top: 0px;
     border-radius: 0;
 }
+.btn-explorer-content {
+    display: flex;
+}
 .btn-explorer {
     border: none;
     height: 40px;
     text-decoration: none;
     margin-top: 30px;
-    width: 100px;
+    width: 93px;
 }
 .btn-explorer i {
     font-size: 16px;
