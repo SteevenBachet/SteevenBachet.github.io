@@ -329,6 +329,8 @@ header {
 }
 .btn-explorer-content {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn-explorer {
     border: none;
@@ -1033,7 +1035,6 @@ header {
 @media screen and (max-width: 600px) {
     .boutique-container {
         padding: 0;
-        margin-top: 60px;
     }
     .boutique-container-bloc {
         margin: 20px auto 0 auto;
@@ -1042,6 +1043,7 @@ header {
         margin: 0 auto;
     }
     .boutique h2 {
+        margin-top: 100px;
         font-size: 35px;
     }
     .boutique p {
