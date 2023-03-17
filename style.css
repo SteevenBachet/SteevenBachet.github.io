@@ -1000,6 +1000,9 @@ header {
     margin-top: 15px;
     font-weight: bold;
 }
+.container-title-price p {
+   padding-right: 5px;
+}
 .container-title-price p span {
     text-decoration: line-through;
     color: #858585;
