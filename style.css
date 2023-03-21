@@ -1000,11 +1000,14 @@ header {
     margin-top: 15px;
     font-weight: bold;
     width: 300px;
-    text-align: right;
+    
 }
 .container-title-price p span {
     text-decoration: line-through;
     color: #858585;
+}
+.container-title-price p:nth-child(2) {
+    text-align: right;
 }
 .boutique-button-plus {
     text-align: center;
