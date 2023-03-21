@@ -999,9 +999,8 @@ header {
     justify-content: space-between;
     margin-top: 15px;
     font-weight: bold;
-}
-.container-title-price p {
-   padding-right: 5px;
+    width: 300px;
+    text-align: right;
 }
 .container-title-price p span {
     text-decoration: line-through;
@@ -1059,7 +1058,7 @@ header {
 /* SUBSCRIBE */ 
 
 .subscribe {
- height: 300px;
+    height: 300px;
 }
 .subscribe-container {
     width: 100%;
