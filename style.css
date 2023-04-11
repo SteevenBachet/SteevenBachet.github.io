@@ -58,13 +58,7 @@ nav {
 }
 @media screen and (max-width: 900px) {
     nav {
-        height: 100%;
-        width: 40%;
-        position: fixed;
-        right: 0;
         background: none;
-        z-index: 110;
-      
     }
     .menu-hamburger {
         display: block;
@@ -72,7 +66,6 @@ nav {
     .liste-nav {
         position: relative;
         flex-direction: column;   
-        height: auto;  
         display: none;  
         text-align: left; 
         margin-top: 80px;
@@ -83,6 +76,11 @@ nav {
     }
     nav.active-menu {
         background: #14213d;
+        height: 100%;
+        width: 40%;
+        position: fixed;
+        right: 0;
+        z-index: 110;
     }
     nav.active-menu .liste-nav{
         display: block;
@@ -109,7 +107,7 @@ nav {
     }
 }
 @media screen and (max-width: 500px) {
-    nav {
+    nav.active-menu {
         width: 50%;
     }
 }
