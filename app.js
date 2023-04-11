@@ -87,15 +87,19 @@ modalBtns.forEach((btn) => {
     const modal = btn.parentNode.parentNode.querySelector(".modal");
 
     modal.style.display = "block";
+    btnMenu.style.display = "none"
 
     const closeModalBtn = modal.querySelector(".close");
     closeModalBtn.addEventListener("click", () => {
       modal.style.display = "none";
+      btnMenu.style.display = "block"
     });
 
     window.addEventListener("click", (event) => {
       if (event.target == modal) {
         modal.style.display = "none";
+        btnMenu.style.display = "block"
+        
       }
     });
   });
