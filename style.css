@@ -105,6 +105,9 @@ nav {
     .dark-overlay.active-menu {
        display: block;
     }
+    .menu-hamburger.modal-active {
+        display: none;
+    }
 }
 @media screen and (max-width: 500px) {
     nav.active-menu {
