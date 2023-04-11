@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+body {
+   
+    background-color: #8F6867;
+}
+.container {
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.685);
+    border-radius: 10px;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: #66FF9B;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/* box du bas et bouton */
+
+.box-button {
+    width: 100%;
+    height: 45%;
+    background-color: #41D976;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
+    font-weight: 900;
+}
+.button-pierre {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: beige;
+    display: inline-block;
+   line-height: 80px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    box-shadow: 0px 9px rgb(222, 222, 222);
+    cursor: pointer;
+}
+.button-feuille {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: beige;
+    display: inline-block;
+    line-height: 80px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    box-shadow: 0px 9px rgb(222, 222, 222);
+    cursor: pointer;
+}
+.button-ciseaux {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: beige;
+    display: inline-block;
+    line-height: 80px;
+    position: absolute;
+    top: 20%;
+    right:10%;
+    box-shadow: 0px 9px rgb(222, 222, 222);
+    cursor: pointer;
+}
+.button-pierre:hover {
+    top: 23%;
+    box-shadow: 0px 6px rgb(222, 222, 222);
+}
+.button-feuille:hover {
+    top: 23%;
+    box-shadow: 0px 6px rgb(222, 222, 222);
+}
+.button-ciseaux:hover {
+    top: 23%;
+    box-shadow: 0px 6px rgb(222, 222, 222);
+}
+.button-pierre:active {
+    background-color: rgb(222, 222, 222);
+    top: 26%;
+    box-shadow: 0px 3px rgb(222, 222, 222);
+}
+.button-feuille:active {
+    background-color: rgb(222, 222, 222);
+    top: 26%;
+    box-shadow: 0px 3px rgb(222, 222, 222);
+}
+.button-ciseaux:active {
+    background-color: rgb(222, 222, 222);
+    top: 26%;
+    box-shadow: 0px 3px rgb(222, 222, 222);
+}
+
+/* VOUS et ENNEMI */
+
+.case-left {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left:8%;
+    text-align: center;
+}
+.case-right {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    text-align: center;
+}
+.circle-left {
+    width : 80px;
+    height: 80px;
+    background-color: rgb(203, 203, 203);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    
+}
+.circle-right {
+    width : 80px;
+    height: 80px;
+    background-color: rgb(203, 203, 203);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.circle-left.active-pierre {
+    background-image: url(pierre.png);
+    background-size: cover  ;
+    background-position: 0px -1px;
+    
+}
+.circle-left.active-feuille {
+    background-image: url(feuille.png);
+    background-size: cover  ;
+    background-position: 0px -1px;
+    
+}
+.circle-left.active-ciseaux {
+    background-image: url(ciseaux.png);
+    background-size: cover  ;
+    background-position: 0px -1px;
+    
+}
+.circle-right.active-pierre {
+    background-image: url(pierre.png);
+    background-size: cover  ;
+    background-position: 0px -1px;
+}
+.circle-right.active-feuille {
+    background-image: url(feuille.png);
+    background-size: cover  ;
+    background-position: 0px -1px;
+    
+}
+.circle-right.active-ciseaux {
+    background-image: url(ciseaux.png);
+    background-size: cover  ;
+    background-position: 0px -1px;
+    
+}
+.vous, .ennemi {
+    font-family: 'Press Start 2P', cursive;
+   font-size: 12px;
+}
+/* animation */
+
+.resultat {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 20px;
+}
+.message {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+@media screen and (max-width:500px) {
+    h1 {
+        top: 150px;
+    }
+}
