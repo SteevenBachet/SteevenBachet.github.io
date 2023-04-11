@@ -5,546 +5,562 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <title>E-SHOP Autour du monde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gajraj+One&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <title>BACHET.S PAGE</title>
 </head>
 <body>
     
-    <!-- Navigation -->
+    <!-- NAV BAR -->
 
     <nav>
         
-        <div class="nav-container">
+        <ul class="liste-nav" id="home-section">
 
-            <div class="logo">
+            <li class="item-nav">
+                <a href="#home-section">ACCUEIL</a>
+            </li>
 
-                <a href="#accueil">
-                    <p class="logo-first">E-SHOP</p>
-                    <p class="logo-second">Autour du monde</p>
-                </a>
-                
-            </div>
+            <li class="item-nav">
+                <a href="#about-section">PROFIL</a>
+            </li>
 
-            <div class="liste">
+            <li class="item-nav">
+                <a href="#course-section">PARCOURS</a>
+            </li>
 
-                <ul class="liste-nav">
+            <li class="item-nav">
+                <a href="#skills-section">COMPÉTENCES</a>
+            </li>
 
-                    <li class="item-nav">
-                        <a href="#presentation">Présentation</a>
-                    </li>
+            <li class="item-nav">
+                <a href="#projects-section">PORTFOLIO</a>
+            </li>
 
-                    <li class="item-nav">
-                        <a href="#explore">Explorer</a>
-                    </li>
-
-                    <li class="item-nav">
-                        <a href="#shop">Boutique</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="symboles">
-
-                <div class="interact">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-
-                <div class="interact">
-                    <i class="fa-regular fa-user"></i>
-                </div>  
-
-                <div class="interact">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-
-                <div class="interact menu-hamburger">
-
-                    <div class="container-hamburger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
+        </ul>
+        
+        <div class="menu-hamburger">
+            <i class="fa-solid fa-bars"></i>
         </div>
 
     </nav>
 
-    <header class="video-header" id="accueil">
+    <!-- DARK OVERLAY -->
 
-        <video src="ressources/water.mp4"               class="video-accueil" muted autoplay loop type="video/mp4"></video>
+    <div class="dark-overlay"></div>
 
+    <!-- FLOATING MENU -->
+
+    <section class="floating-menu">
+
+        <ul class="liste-menu">
+
+            <li class="item-menu">
+                <a href="#home-section">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </a>
+                <div class="item-name">
+                    <p>Accueil</p>
+                    <span class="triangle"></span>
+                </div>
+            </li>
+
+            <li class="item-menu">
+                <a href="#about-section">
+                    <i class="fa-solid fa-id-card"></i>
+                </a>
+                <div class="item-name">
+                    <p>Profil</p>
+                    <span class="triangle"></span>
+                <div>
+            </li>
+
+            <li class="item-menu">
+                <a href="#course-section">
+                    <i class="fa-solid fa-suitcase"></i>
+                </a>
+                <div class="item-name">
+                    <p>Parcours</p>
+                    <span class="triangle"></span>
+                </div>
+            </li>
+
+            <li class="item-menu">
+                <a href="#skills-section">
+                    <i class="fa-solid fa-wrench"></i>
+                </a>
+                <div class="item-name">
+                    <p>Compétences</p>
+                    <span class="triangle"></span>
+                </div>
+            </li>
+
+            <li class="item-menu">
+                <a href="#projects-section">
+                    <i class="fa-solid fa-book"></i>
+                </a>
+                <div class="item-name">
+                    <p>Portfolio</p>
+                    <span class="triangle"></span>
+                </div>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <!-- HOME -->
+
+    <section class="home">
+
+        <div class="home-container">
+
+            <div class="logo-sb">
+                <div class="logo-letter">SB</div>
+            </div>
+
+            <div class="home-title">
+                <h1>Steeven Bachet</h1>
+                <p>Développeur amateur en recherche d'une alternance</p>
+            </div>    
+
+            <a class="button-discover" href="#projects-section">Découvrir mes réalisations</a>
+
+            <div class="round-1"></div>
+
+        </div>
+  
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about-section">
+
+        <div class="about-container">
+            
+            <h2>Profil</h2>
+
+            <div class="about-content">
+
+                <div class="about-content-left">
+                    <div class="photo"></div>
+                    <a class="button-cv" href="ressources/CV.pdf" download="CV-SteevenBACHET">Telecharger mon CV<i class="fa-solid fa-download"></i></a>
+                </div>
+
+                <div class="about-content-right">
+                    <p>Bonjour, je m'appelle Steeven Bachet, <span>technicien de maintenance industriel</span> passionné par le développement informatique.<br><br>
+                    Il y a plusieurs mois, j'ai commencé à programmer mon premier jeu vidéo par simple curiosité. j'ai pris goût à ce domaine et je suis devenu un <span>développeur amateur</span>. <br><br>
+                    Actuellement, j'apprends à programmer en dehors de mon travail de manière autodidacte en utilisant des ressources en ligne, notamment en <span>C#, Front-end et Javascript</span>. Mais je suis conscient que pour consolider mes connaissances et devenir un professionnel compétent, j'ai besoin de suivre une <span>formation en apprentissage</span>.<br><br>
+                    Mon objectif est d'acquérir les compétences nécessaires pour devenir un développeur qualifié et travailler sur des projets passionnants dans ce domaine en constante évolution.
+                    </p>
+                </div>
+
+            </div>
+        
+        </div>
        
-        <div class="overlay">
+    </section>
 
-            <h1>VOYAGE ET AVENTURE</h1>
+    <!-- COURSE -->
 
-            <div class="button-content">
+    <section class="course" id="course-section">
 
+        <h2>Parcours</h2>
+
+        <div class="timeline-container">
+
+            <div class="timeline-item">
+
+                <h3>BEP/BAC PRO Maintenance des Equipements Industriels</h3>
+
+                <h4>Lycée professionnel maréchal Leclerc</h4>
+
+                <p>- Compétences de base en maintenance industrielle (la mécanique, l'électricité, l'hydraulique et la pneumatique). <br>
+                - Travailler en équipe et à respecter les normes de sécurité en milieu industriel.</p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <h3>BTS Maintenance des Systèmes de Production</h3>
+
+                <h4>Alternance chez RENAULT</h4>
+
+                <p>- Compétences en matière de diagnostic et de gestion de projet.<br>
+                - Travailler dans un environnement à haute pression et à gérer mon temps efficacement.</p>
+
+            </div>
                 
-                <a href="#shop" class="btn btn-overlay btn-boutique">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    BOUTIQUE  
-                </a>
-               
+            <div class="timeline-item">
 
-                <a href="#explore" class="btn btn-overlay btn-explorer"><div class="btn-explorer-content">
-                    <i class="fa-regular fa-compass"></i>
-                    EXPLORER
-                </div>
-                </a>
+                <h3>Technicien de maintenance</h3>
+
+                <h4>ESPRI Restauration et COSME</h4>
+
+                <p>- Capacité de travailler de manière autonome.<br>
+                - Expertise approfondie dans les domaines de la mécanique, de l'électronique et de l'informatique industrielle.<br>
+                - Techniques avancées pour dépanner et résoudre les problèmes de manière efficace.</p>
 
             </div>
 
-        </div>
+            <div class="timeline-item">
 
-    </header>
+                <h3>Développement informatique</h3>
 
-    <!-- Section Presentation -->
+                <p>
+                     Après avoir créé mes deux premiers jeux vidéo, j'ai décidé d'apprendre le langage C# en suivant une formation pour coder des jeux sur Unity. J'ai rapidement pris goût à la programmation et j'ai commencé une seconde formation en ligne sur le Front-end. Ces formations m'ont permis de me familiariser avec un langage de programmation et de créer des visuels pour des sites web. Actuellement, je me concentre sur le Javascript pour perfectionner ma logique de programmation.
+                </p>
 
-    <section class="presentation" id="presentation">
+                <div class="round-2"></div>
+                <div class="round-3"></div>
+                <div class="round-4"></div>
+                <div class="round-5"></div>
 
-        <div class="presentation-container">
-
-            <div class="presentation-txt">
-
-                <div class="presentation-txt-container">
-
-                    <h2>TOUT POUR L'AVENTURE</h2>
-                    <p>Préparez votre prochaine aventure avec notre site <strong>E-SHOP autour du monde</strong> spécialisé dans les équipements de voyage. Découvrez notre sélection d'articles pratiques et innovants pour vivre des moments inoubliables !</p>
-                    <a href="#shop" class="btn btn-boutique btn-shop">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        BOUTIQUE</button>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="presentation-image">
-
-                <div class="container-image-container">
-
-                    <div class="image-container image-container-accessoires">
-
-                        <div class="image accessoires">
-
-                            <div class="image-txt">
-                                <p>ACCESSOIRES</p>
-                                <span>+</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="image-container image-container-vetements">
-
-                        <div class="image vetements">
-
-                            <div class="image-txt">
-                                <p>VÊTEMENTS</p>
-                                <span>+</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="image-container image-container-chaussures">
-
-                        <div class="image chaussures">
-
-                            <div class="image-txt">
-                                <p>CHAUSSURES</p>
-                                <span>+</span>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        
-    </section>
-
-    <!-- Section Explorer parallax carousel-->
-
-    <section class="explorer" id="explore">
-        
-        <div class="parallax-container">
-
-            <div class="explorer-txt-container">
-                <h2>VOYAGER DE CHEZ SOI</h2>
-                <p>Avec le temps, on apprend que les aventures peuvent se vivre n’importe où, n’importe quand. Qu’elles ne demandent pas nécessairement beaucoup de préparation. Qu’elles n’ont pas besoin d’être vécues à des milliers de kilomètres. Qu’elles peuvent se produire aussi simplement qu’en sortant de chez soi.</p>
-            </div>
-
-            <div class="container">
-
-                <div id="carousel1">
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container">
-        
-                            <div class="carousel-item-image item-1">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>Itinéraire au Portugal</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-        
-                    </div>
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container">
-        
-                            <div class="carousel-item-image item-2">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>Paddle Board gonflable : Tout ce qu'il faut savoir avant l'achat</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-        
-                    </div>
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container ">
-        
-                            <div class="carousel-item-image item-3">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>Guide : L'assurance maladie du Québec et le voyage</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-        
-                    </div>
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container">
-        
-                            <div class="carousel-item-image item-4">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>Que faire à New York lorsqu'il neige ?</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-                            
-                    </div>
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container">
-        
-                            <div class="carousel-item-image item-5">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>Safari : 3 destinations à découvrir</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-        
-                    </div>
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container">
-        
-                            <div class="carousel-item-image item-6">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>Quand faut-il partir en Tanzanie ?</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-        
-                    </div>
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container ">
-        
-                            <div class="carousel-item-image item-7">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>10 plages incontournables</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-        
-                    </div>
-        
-                    <div class="carousel-item">
-        
-                        <div class="carousel-item-container">
-        
-                            <div class="carousel-item-image item-8">
-                                    
-                            </div>
-        
-                            <div class="carousel-item-txt">
-                                <h3>Les plus beaux départements de France</h3>
-                                <button class="btn-article">LIRE L'ARTICLE</button>
-                            </div>
-        
-                        </div>
-                            
-                    </div>
-                </div>
-        
             </div>
 
         </div>
 
     </section>
 
-    <!-- Section Boutique -->
+    <!-- SKILLS -->
 
-    <section class="boutique" id="shop">
+    <section class="skills" id="skills-section">
 
-        <div class="boutique-container">
+        <h2>Compétences</h2>
 
-            <div class="boutique-txt">
+        <div class="skills-container">
 
-                <h2>SHOPPING</h2>
-                <p>Explorer notre catalogue pour trouver ce dont vous avez besoin</p>
+            <div class="skill c">
+                <p>C#</p>
+                <img src="ressources/c.svg">
+            </div>
+
+            <div class="skill">
+                <p>HTML</p>
+                <i class="fa-brands fa-html5"></i>
+            </div>
+
+            <div class="skill">
+                <p>CSS</p>
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+
+            <div class="skill">
+                <p>JAVASCRIPT</p>
+                <i class="fa-brands fa-js"></i>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects-section">
+
+        <h2>Portfolio</h2>
+
+        <div class="projects-container">
+
+            <div class="project-item project-1">
+                
+                <div class="interaction-project">
+                    <h3>E-SHOP autour du monde</h3>
+                    <p>site de vente en ligne</p>
+
+                    <button class="modal-btn">en savoir plus</button>
+
+                </div>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <h4>E-SHOP autour du monde</h4>
+                        
+                        <p><strong>Description :</strong> Création et intégration d'un site de vente en ligne spécialisé dans les produits de voyage (site vitrine).</p>
+
+                        <p><strong>Technologies travaillées :</strong><br><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-js"></i></p>
+
+                        <ul>
+                            <li>- Barre de navigation animée</li>
+                            <li>- Vidéo d'en-tête</li>
+                            <li>- Intégration d’éléments pour dynamiser le site et synthétiser les contenus.</li>
+                            <li>- Zones parallaxe</li>
+                            <li>- Entrainement aux carrousels</li>
+                            <li>- Responsive design</li>
+                            <li>- Ajouter de l'intéractivité avec JavaScript</li>
+                        </ul>
+
+                        <a class="see-btn" href="site/E-SHOP_autour_du_monde/index.html" target="_blank"><i class="fa-solid fa-eye"></i> Voir le site</a>
+                    </div>
+                </div>
 
             </div>
-    
-            <div class="boutique-container-bloc">
-    
-                <div class="boutique-bloc bloc-1">
 
-                    <div class="boutique-image product-1"></div>
+            <div class="project-item project-2">
 
-                    <div class="container-title-price">
-                        <p>PADDLE BOARD GONFLABLE</p>
-                        <p>475€</p>
+                <div class="interaction-project">
+                    <h3>Maintenance company</h3>
+                    <p>site d'une entreprise de maintenance</p>
+                    
+                    <button class="modal-btn">en savoir plus</button>
+
+                    
+                </div>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <h4>Maintenance company</h4>
+                        
+                        <p><strong>Description :</strong> Création d'un petit site vitrine pour une entreprise de maintenance fictive afin de s'entrainer sur quelques techniques.</p>
+
+                        <p><strong>Technologies travaillées :</strong><br><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-js"></i></p>
+
+                        <ul>
+                            <li>- Barre de navigation équipée de dropdown interactif en version mobile</li>
+                            <li>- Animations et scrolling animations</li>
+                            <li>- Implantation d'une carte pour localiser l'entreprise</li>
+                            <li>- Responsive design</li>
+                            <li>- Ajouter de l'intéractivité avec JavaScript</li>
+                        </ul>
+
+                        <a class="see-btn" href="site/maintenance_company/index.html" target="_blank"><i class="fa-solid fa-eye"></i> Voir le site</a>
                     </div>
+                </div>
+
+            </div>
+
+            <div class="project-item project-3">
+
+                <div class="interaction-project">
+                    <h3>Wix</h3>
+                    <p>reproduction du site de Wix</p>
+                    
+                    <button class="modal-btn">en savoir plus</button>
 
                 </div>
 
-                <div class="boutique-bloc bloc-2">
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        
+                        <h4>Wix</h4>
+                        
+                        <p><strong>Description :</strong> Intégration du site web de WIX pour bien assimiler les bases du front-end.</p>
 
-                    <div class="boutique-image product-2"></div>
+                        <p><strong>Technologies travaillées :</strong><br><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i></p>
 
-                    <div class="container-title-price">
-                        <p>LEGGING "CÉLESTE"</p>
-                        <p>64€</p>
+                        <ul>
+                            <li>- Barre de navigation stylisée</li>
+                            <li>- Apprendre à utliser de la documentation en ligne</li>
+                            <li>- Entrainement aux flexbox et CSS grid</li>
+                            <li>- Corriger les problèmes d'intégrations</li>
+                            <li>- Responsive design</li>
+                        </ul>
+
+                        <a class="see-btn" href="site/Wix-remake/index.html" target="_blank"><i class="fa-solid fa-eye"></i> Voir le site</a>
                     </div>
-
                 </div>
 
-                <div class="boutique-bloc bloc-3">
+            </div>
 
-                    <div class="boutique-image product-3"></div>
+            <div class="project-item project-4">
 
-                    <div class="container-title-price">
-                        <p>PANTOUFLE EN DUVET RECYCLABLE</p>
-                        <p>87€</p>
-                    </div>
-
+                <div class="interaction-project">
+                    <h3>Kyoto-voyage</h3>
+                    <p>site de voyage</p>
+                    
+                    <button class="modal-btn">en savoir plus</button>
+                    
                 </div>
 
-                <div class="boutique-bloc bloc-4">
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        
+                        <h4>Kyoto-voyage</h4>
+                        
+                        <p><strong>Description :</strong> Premier site complet fait lors d'une formation en ligne afin de mettre en pratique toutes les compétences acquises dans un vrai projet.</p>
 
-                    <div class="boutique-image product-4"></div>
+                        <p><strong>Technologies travaillées :</strong><br><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i></p>
 
-                    <div class="container-title-price">
-                        <p>MASQUE LAVABLE</p>
-                        <p><span>12€</span> 4€</p>
+                        <ul>
+                            <li>- Structuration d'un site et de l'HTML avant d'ajouter le style</li>
+                            <li>- Barre de navigation avec menu hamburger </li>
+                            <li>- Les transitions</li>
+                            <li>- Entrainement aux flexbox</li>
+                            <li>- Zone asymétrique avec CSS grid</li>
+                            <li>- Parallax</li>
+                            <li>- Cartes tarifs</li>
+                            <li>- Formulaire</li>
+                            <li>- Responsive design</li>
+                           
+                        </ul>
+
+                        <a class="see-btn" href="site/Kyoto-voyage/kyoto.html" target="_blank"><i class="fa-solid fa-eye"></i> Voir le site</a>
                     </div>
-
                 </div>
 
-                <div class="boutique-bloc bloc-5">
-
-                    <div class="boutique-image product-5"></div>
-
-                    <div class="container-title-price">
-                        <p>ENSEMBLE DE MAILLOT DE BAIN</p>
-                        <p>60€</p>
-                    </div>
-
-                </div>
-
-                <div class="boutique-bloc bloc-6">
-
-                    <div class="boutique-image product-6"></div>
-
-                    <div class="container-title-price">
-                        <p>BAS DE SPORT PERFORMANCE</p>
-                        <p><span>28€</span> 20€</p>
-                    </div>
-
-                </div>
-
-                <div class="boutique-bloc bloc-7">
-
-                    <div class="boutique-image product-7"></div>
-
-                    <div class="container-title-price">
-                        <p>TOP DE SPORT</p>
-                        <p>67€</p>
-                    </div>
-
-                </div>
-
-                <div class="boutique-bloc bloc-8">
-
-                    <div class="boutique-image product-8"></div>
-
-                    <div class="container-title-price">
-                        <p>ROBE «COCO BREEZE» DÉRIVE X LADM</p>
-                        <p>75€</p>
-                    </div>
-
-                </div>
-
-                <div class="boutique-bloc bloc-9">
-
-                    <div class="boutique-image product-9"></div>
-
-                    <div class="container-title-price">
-                        <p>SERVIETTE EN MICROFIBRE</p>
-                        <p>52€</p>
-                    </div>
-
-                </div>
-
-                <div class="boutique-bloc bloc-10">
-
-                    <div class="boutique-image product-10"></div>
-
-                    <div class="container-title-price">
-                        <p>SHORT DE SPORT "PERFORMANCE"</p>
-                        <p>49€</p>
-                    </div>
-
-                </div>
-
-                <div class="boutique-bloc bloc-11">
-
-                    <div class="boutique-image product-11"></div>
-
-                    <div class="container-title-price">
-                        <p>MANTEAU MICROLIGHT ALPINE</p>
-                        <p><span>210€</span> 185€</p>
-                    </div>
-
-                </div>
-
-                <div class="boutique-bloc bloc-12">
-
-                    <div class="boutique-image product-12"></div>
-
-                    <div class="container-title-price">
-                        <p>TUQUE CACHEMIRE RECYCLÉ</p>
-                        <p>40€</p>
-                    </div>
-
-                </div>
-    
             </div>
             
-            <div class="boutique-button-plus">
+            <div class="project-item project-5">
 
-                <button class="btn btn-boutique btn-shop btn-plus">VOIR PLUS</button>
+                <div class="interaction-project">
+                    <h3>Trouve L'animal</h3>
+                    <p>jeu du pendu autour des animaux</p>
+                    
+                    <button class="modal-btn">en savoir plus</button>
 
-                <p>voir tous le catalogue</p>
+                </div>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        
+                         
+                        <h4>Trouve l'animal</h4>
+                        
+                        <p><strong>Description :</strong> Jeu du pendu sur navigateur autour des animaux.</p>
+
+                        <p><strong>Technologies travaillées :</strong><br><i class="fa-brands fa-js"></i></p>
+
+                        <ul>
+                            <li>- Familiarisation aux bases du language JavaScript</li>
+                            <li>- Créer et organiser un script JS afin de créer un jeu</li>
+                            <li>- Corriger les erreurs du programme et celle qui pourrait être faites par le joueur</li>
+                            <li>- Traiter le résultat et la vie du joueur</li>
+                           
+                        </ul>
+
+                        <a class="see-btn" href="site/Trouve-animal/TrouveLeMot.html" target="_blank"><i class="fa-solid fa-eye"></i> Voir le site</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-item project-6">
+
+                <div class="interaction-project">
+                    <h3>Pierre feuille ciseaux</h3>
+                    <p>jeu du chifoumi </p>
+
+                    <button class="modal-btn">en savoir plus</button>
+
+                </div>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        
+                        <h4>Pierre feuille ciseaux</h4>
+                        
+                        <p><strong>Description :</strong> Première création pour apprendre le language JavaScript.</p>
+
+                        <p><strong>Technologies travaillées :</strong><br><i class="fa-brands fa-js"></i></p>
+
+                        <ul>
+                            <li>- Familiarisation aux bases du language JavaScript</li>
+                            <li>- Comprendre et corriger les erreurs de programme</li>
+                            <li>- Créer un jeu ou l'ennemi donne un symbole aléatoirement à chaque tour</li>
+                        </ul>
+
+                        <a class="see-btn" href="site/Pierre feuille ciseaux only github web/PierreFeuilleCiseaux.html" target="_blank"><i class="fa-solid fa-eye"></i> Voir le site</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-item project-7">
+
+                <div class="interaction-project">
+                    <h3>The_Space_Trouble</h3>
+                    
+                    <p>jeu à deux en coopération</p>
+
+                    <button class="modal-btn">en savoir plus</button>
+
+                </div>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+
+                        <h4>The_Space_Trouble</h4>
+                        
+                        <p><strong>Description :</strong> Jeu en coopération local où l'objectif est de communiquer avec l'autre joueur pour sortir des niveaux en faisant attention aux couleurs.</p>
+
+                        <ul>
+                            <li>- Organisation dans un gros projet</li>
+                            <li>- Conception du game/level design</li>
+                            <li>- Création de tous les sprites et animations</li>
+                        </ul>
+
+                        <div class="game-pics">
+                            <div class="pic pic-1"></div>
+                            <div class="pic pic-2"></div>
+                            <div class="pic pic-3"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-item project-8">
+
+                <div class="interaction-project">
+                    <h3>Jeu de plateforme</h3>
+                    
+                    <button class="modal-btn">en savoir plus</button>
+    
+                </div>
+    
+                <div class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+    
+                        <h4>Jeu de plateforme</h4>
+                        
+                        <p><strong>Description :</strong> Petit jeu de plateforme en 2D.</p>
+
+                        <ul>
+                            <li>- Découverte de la programmation et du moteur de jeu GameMaker</li>
+                            <li>- Conception du level design</li>
+                            <li>- Création de tous les sprites et animations</li>
+                        </ul>
+
+                        <video src="ressources/vidéo_platformer.mp4" type="video/mp4" muted autoplay loop></video>
+                        
+
+                    </div>
+
+                </div>
+               
 
             </div>
 
         </div>
-        
 
     </section>
-
-
-    <section class="subscribe">
-
-        <div class="subscribe-container">
-
-            <div class="subscribe-txt">
-                <h2>ABONNEZ-VOUS À EADM</h2>
-                <p>Inscrivez-vous pour des offres exclusives, des événements et plus encore.</p>
-            </div>
-
-            <div class="subscribe-form">
-                <input type="text" placeholder="Courriel" class="txt-sub">
-                <input type="submit" value="S'ABONNER" class="button-sub ">
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="partner">
-
-        <div class="partner-txt">
-            <h2>PARTENAIRE</h2>
-        </div>
-        
-        <div class="logo-partner">
-            <img src="ressources/logoPartner1.avif">
-            <img src="ressources/logoPartner2.png">
-            <img src="ressources/logoPartner3.avif">
-            <img src="ressources/logoPartner4.avif">
-            <img src="ressources/logoPartner5.avif">
-            <img src="ressources/logoPartner6.avif">
-        </div>
-    </section>
+    
+    <!-- FOOTER -->
 
     <footer>
-        <div class="footer-1">
-            <p>© E-SHOP autour du monde - 2023</p>
-        </div>
-        
-        <div class="footer-2">
-            <p>Une réalisation web de : <span>STEEVEN</span></p>
-            <p>Inspirer du site : <span>Lydiane autour du monde</span></p>
-        </div>
-        
-    </footer>
 
+        <div class="footer-link">
+
+            <a href="https://github.com/SteevenBachet" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/steeven-bachet-58046a271/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+        
+        <p>Copyright © 2023 Steeven BACHET</p>
+
+    </footer>
 
     <script src="app.js"></script>
 </body>
