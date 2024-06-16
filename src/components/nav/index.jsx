@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import '../../styles/components/nav/nav.css';
 
 function Nav() {
@@ -8,11 +8,11 @@ function Nav() {
         setMenuOpen(!menuOpen);
     };
 
-    const closeMenu = (e) => {
+    const closeMenu = useCallback((e) => {
         if (menuOpen && !e.target.closest('.nav__container') && !e.target.closest('.menu-hamburger')) {
             setMenuOpen(false);
         }
-    };
+    }, [menuOpen]);
 
     useEffect(() => {
         if (menuOpen) {
@@ -24,7 +24,7 @@ function Nav() {
         return () => {
             document.removeEventListener('click', closeMenu);
         };
-    }, [menuOpen]);
+    }, [menuOpen, closeMenu]);
 
     return (
         <nav className='nav'>   
