@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../../../public/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Monoton;
+  src: url("../../../public/Monoton-Regular.ttf");
+}
+@font-face {
+  font-family: PressStart;
+  src: url("../../../public/PressStart2P-Regular.ttf");
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */

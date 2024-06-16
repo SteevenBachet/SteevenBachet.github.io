@@ -1,0 +1,154 @@
+.contact {
+    height: auto;
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-family: 'PressStart', sans-serif;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__container {
+        display: flex;
+        gap: 100px;
+        padding: 50px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 400px;
+            &__form {
+                display: flex;
+                flex-direction: column;
+                label {
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                }
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    border: none;
+                    border-radius: 2px;
+                }
+                textarea {
+                    height: 150px;
+                    resize: none;
+                }
+                button {
+                    padding: 10px;
+                    font-size: 12px;
+                    background-color: white;
+                    color: black;
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    font-family: PressStart;
+                    &:hover {
+                        background-color: #63fb52;
+                    }
+                }
+                &__message {
+                    text-align: center;
+                }
+            }
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                &__details {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    &__detail {
+                        i {
+                            padding-right: 10px;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            &:hover {
+                                color: #63fb52;
+                            }
+                        }
+                    }
+                }
+                &__icons {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    &__icon {
+                        i {
+                            color: rgb(255, 255, 255);
+                            font-size: 40px;
+                            &:hover {
+                                color: #63fb52;
+                            }
+                        }
+                    }
+                }
+            }  
+            &__cv {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                &__image {
+                    height: auto; 
+                    width: 100%; 
+                    border-radius: 2px;
+                    border: 2px solid rgb(255, 255, 255);
+                }
+                &__button {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 12px;
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0); 
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    font-family: PressStart;
+                    text-decoration: none;
+                    text-align: center;
+                    &:hover {
+                        background-color: #63fb52;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .contact {
+        &__title {
+            margin: 0;
+        }
+        &__container {
+            flex-direction: column;
+            gap: 40px;
+            padding: 0;
+            &__item {
+                gap: 20px;
+                width: 330px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

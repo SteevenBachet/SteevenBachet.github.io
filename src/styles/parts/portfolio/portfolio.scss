@@ -1,0 +1,199 @@
+.portfolio {
+  height: auto;
+  padding: 50px 0;
+  background: url('../../../assets/test5.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  &__title {
+    font-family: PressStart;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+  }
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+    position: relative;
+    &__slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      &__track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+      }
+      &__button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 8rem;
+        color: white;
+        cursor: pointer;
+        z-index: 2;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &--prev {
+          left: 0;
+        }
+        &--next {
+          right: 0;
+        }
+      }
+    }
+    &__item {
+      flex: 0 0 50%;
+      position: relative;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      &:hover::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+      }
+      &:hover &__more-info {
+        opacity: 1;
+        z-index: 2;
+      }
+      &__more-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+        opacity: 0;
+      }
+      &__image {
+        width: 80%;
+        height: auto;
+        border: 1px solid rgb(255, 255, 255);
+      }
+      &__title {
+        font-size: 20px;
+        margin: 10px 0;
+        color: white;
+      }
+      &__description {
+        font-size: 14px;
+        color: white;
+      }
+    }
+  }
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    &__content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 2px;
+      max-width: 60%;
+      max-height: 80%;
+      width: 100%;
+      overflow-y: auto;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      &__close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
+        cursor: pointer;
+      }
+      &__technology {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        & li {
+          list-style-type: none;
+          color: #14c800;
+          border: 2px solid #14c600;
+          border-radius: 2px;
+          padding: 3px;
+          
+        }
+      }
+      &__skill {
+        list-style-type: none;
+        :nth-child(1) {
+          padding-top: 10px;
+        }
+      }
+      &__problems-resolutions {
+        margin-top: 20px;
+        padding: 0;
+        list-style-type: none;
+        :nth-child(1) {
+          padding-top: 10px;
+        }
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .portfolio__slider__button {
+    width: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolio__container {
+    width: 100%;
+    padding: 50px 0 0 0;
+    &__item {
+      flex: 0 0 100%;
+    }
+  }
+  .portfolio__slider__track {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 850px) {
+  .portfolio__modal__content {
+    max-width: 80%;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio__container__item {
+    flex: 0 0 100%;
+  }
+  .portfolio__container__slider__button {
+    width: 50px;
+    font-size: 6rem;
+  }
+  .portfolio__modal__content__technology {
+    flex-direction: column;
+  }
+}
+

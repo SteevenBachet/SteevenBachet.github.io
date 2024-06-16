@@ -1,0 +1,61 @@
+.profil {
+  background-color: rgb(1, 1, 1);
+  &__container {
+    padding: 50px 0;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: PressStart;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        padding: 50px;
+        &__image {
+            width: 150px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px 5px #63fb5290;
+        }
+        &__text {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            width: 70%;
+            span {
+                color: #63fb52;
+            }
+            &__space {
+                margin-top: 20px;
+                height: 20px;
+                background-color: aliceblue;
+            }
+        }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+    .profil {
+        &__container {
+          width: 85%;
+          &__title {
+            font-size: 30px;
+          }
+          &__content {
+              padding: 50px 0 0 0;
+              
+              &__text {
+                  font-size: 16px;
+                  width: 100%;
+              }
+          }
+        }
+    }
+}

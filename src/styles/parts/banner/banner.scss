@@ -1,0 +1,12 @@
+.banner {
+    height: 150px;
+    background: url("../../../assets/test5.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
