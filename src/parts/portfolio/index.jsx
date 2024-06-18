@@ -9,7 +9,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const fetchProjects = async () => {
-      const response = await fetch('http://localhost:3000/projects.json');
+      const response = await fetch('/projects.json');
       const data = await response.json();
       // Ajoutez une logique pour dupliquer les projets
       setProjects([...data, ...data]);
